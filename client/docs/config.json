@@ -1,0 +1,65 @@
+{
+  "swagger": "3.0",
+  "info": {
+    "title": "RedactedFury/FuryHubChain REST and gRPC Gateway docs",
+    "description": "A REST interface for state queries, transactions",
+    "version": "3.0.0"
+  },
+  "apis": [
+    {
+      "url": "./client/docs/swagger_legacy.yaml",
+      "dereference": {
+        "circular": "ignore"
+      }
+    },
+    {
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/farming/v1beta1/query.swagger.json",
+      "operationIds": {
+        "rename": {
+          "Params": "FarmingParams"
+        }
+      }
+    },
+    {
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/liquidity/v1beta1/query.swagger.json",
+      "operationIds": {
+        "rename": {
+          "Params": "LiquidityParams",
+          "Pool": "LiquidityPool"
+        }
+      }
+    },
+    {
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/liquidstaking/v1beta1/query.swagger.json",
+      "operationIds": {
+        "rename": {
+          "Params": "LiquidStakingParams"
+        }
+      }
+    },
+    {
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/mint/v1beta1/query.swagger.json",
+      "operationIds": {
+        "rename": {
+          "Params": "MintParams"
+        }
+      }
+    },
+    {
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/claim/v1beta1/query.swagger.json",
+      "operationIds": {
+        "rename": {
+          "Params": "ClaimParams"
+        }
+      }
+    },
+    {
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/marketmaker/v1beta1/query.swagger.json",
+      "operationIds": {
+        "rename": {
+          "Params": "MarketMakerParams"
+        }
+      }
+    }
+  ]
+}
